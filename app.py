@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 
 app = Flask(__name__)
-header = pd.read_csv('https://raw.githubusercontent.com/nicolehuscher7/PSL_project4/refs/heads/main/headers.csv', index_col=0).columns.tolist()
-sim_matrix = pd.read_csv('https://raw.githubusercontent.com/nicolehuscher7/PSL_project4/refs/heads/main/s_filtered.csv', index_col=0)
+header = pd.read_csv('headers.csv', index_col=0).columns.tolist()
+sim_matrix = pd.read_csv('s_filtered.csv', index_col=0)
 html_template = """
 <!doctype html>
 <html lang="en">
